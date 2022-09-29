@@ -1,6 +1,10 @@
 body {
     text-align : center ;
 }
+#active{
+    background-color:white;
+    color: steelblue;
+}
 nav {
 background-color: steelblue;
 padding: 10px;
@@ -19,6 +23,11 @@ img {
 }
 p {
     padding: 20px;
+}
+.main-paragraph {
+    font-size: 1.5em;
+    line-height: 1.5em;
+
 }
 footer{
     background-color: steelblue;
