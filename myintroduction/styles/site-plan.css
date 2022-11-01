@@ -15,15 +15,15 @@ Fonts are separated by a | */
 "Ubuntu Condensed", Verdana, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --headline-color-on-white: #644241;  /* headlines on a white background */ 
+  --headline-color-on-color: #12172B; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #644241; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #12172B; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #65E7DE;
+  --nav-link-color: #12172B;
+  --nav-background-color: #65E7DE;
+  --nav-hover-link-color: #65E7DE;
+  --nav-hover-background-color: #12172B;
 }
 
 
