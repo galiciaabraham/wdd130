@@ -26,6 +26,20 @@ Fonts are separated by a | */
   --nav-hover-background-color: #12172B;
 }
 
+.homepage {
+  width: 500px;
+  padding: 10px;
+}
+
+.aboutme {
+  width: 500px;
+  padding: 10px;
+}
+
+.portfolio {
+  width: 500px;
+  padding: 10px;
+}
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
