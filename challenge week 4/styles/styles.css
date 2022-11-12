@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(219, 166, 214);
+    text-align: center;
+}
+
+h1:hover {
+    color:black;
+}
+.principles{
+    display: inline-block;
+    width: auto;
+    text-align: left;
+}
+
+.white {
+    color: white;
+}
+
+#quote {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.name {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}

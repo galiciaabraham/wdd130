@@ -1,0 +1,21 @@
+#all{
+    max-width: 1600px;
+}
+
+.main-image {
+    display: block;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(58, 55, 55);
+}
+
+.elements {
+    display: inline;
+    width: 35%;
+    border-radius: 100%;
+    border: 1.5em solid rgb(79, 74, 74);
+    padding: .1%;
+
+}
