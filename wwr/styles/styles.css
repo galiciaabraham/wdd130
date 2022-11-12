@@ -77,7 +77,7 @@ header {
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
-    color: #6f7364;
+    color: #e4e4c9;
 }
 
 
@@ -232,6 +232,29 @@ footer a:hover{
 
 /*This section is for the blog page */
 
+.button-box {
+    text-align: center;
+    text-decoration: none;
+    font-family:'Abel','Verdana', 'sans-serif';
+    font-size: 1.5em;
+    padding: 30px;
+}
+
+.blog h1 {
+    max-width: 300px;
+    max-height: 30px;
+    display: block;
+    background-color: #517AA4;
+    text-align: center;
+    margin: 10px auto;
+    color:#e4e4c9;
+    font-family:'Bebas Neue','Times New Roman', 'serif';
+    font-size: 1.5em;
+    padding: 10px 10px;
+    border-radius: 5%;
+
+}
+
 .first-entry {
     display:grid;
     grid-template-columns: repeat(10, 1fr) ;
@@ -257,11 +280,35 @@ footer a:hover{
 
 }
 
-
 .button-box {
     margin: 0 auto;
    grid-column:7/10;
    grid-row: 5/6;
+}
+
+.second-entry {
+    display:grid;
+    grid-template-columns: repeat(10, 1fr) ;
+}
+
+#second-blog {
+    margin: 10px auto;
+    grid-column: 11/6;
+    grid-row: 1/6;
+    padding: 20px;
+}
+
+.second-entry h1 {
+    grid-column: 2/5;
+    grid-row: 1/2;
+}
+
+
+.second-entry p {
+    margin: 0 auto;
+   grid-column:2/5;
+   grid-row: 2/5;
+
 }
 
 .third-entry {
@@ -308,6 +355,7 @@ footer a:hover{
 }
 
 .reviews p {
+    margin: 0 auto;
     text-align: center;
     color:black;
     font-family:'Abel','Verdana', 'sans-serif';
@@ -317,33 +365,78 @@ footer a:hover{
 
 }
 
-.button-box {
-    text-align: center;
-    text-decoration: none;
-    font-family:'Abel','Verdana', 'sans-serif';
-    font-size: 1.5em;
-    padding: 30px;
+#first-comment {
+    max-width: 250px;
+    min-width: 150px;
+    max-height: 200px;
+    min-height:100px ;
+    border: 10px solid #517AA4 ;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #FFFFFF;
 }
 
-.blog h1 {
-    max-width: 300px;
-    max-height: 60px;
-    display: block;
-    background-color: #517AA4;
-    text-align: center;
-    margin: 10px auto;
-    color:#e4e4c9;
-    font-family:'Bebas Neue','Times New Roman', 'serif';
-    font-size: 1.5em;
-    padding: 10px 10px;
-    border-radius: 5%;
-
+#second-comment {
+    max-width: 250px;
+    min-width: 150px;
+    max-height: 200px;
+    min-height:100px ;
+    border: 10px solid #517AA4 ;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #FFFFFF;
 }
+
+#third-comment {
+    max-width: 250px;
+    min-width: 150px;
+    max-height: 200px;
+    min-height:100px ;
+    border: 10px solid #517AA4 ;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #FFFFFF;
+}
+
+
+.stars {
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.reviews {
+    display:grid;
+    grid-template-columns: repeat(10, 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 30px;
+}
+
+.reviews h1 {
+    grid-column: 6/7;
+    grid-row: 1/2;
+}
+
+.first-review {
+    grid-column: 1/4;
+    grid-row: 2/4;
+}
+
+.second-review {
+    grid-column: 5/8;
+    grid-row: 2/4;
+}
+
+.third-review {
+    grid-column: 8/11;
+    grid-row: 2/4;
+}
+
 
 /*This section is for smartphones */
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid, .blog, .blog-entries, .first-entry, .third-entry {
+    #hero, .home-grid, .blog, .blog-entries, .first-entry, .second-entry, .third-entry{
+        display: block;
+        height: auto;
+    }
+    .reviews {
         display: block;
         height: auto;
     }
@@ -359,9 +452,14 @@ footer a:hover{
     }
     #hero-msg {
         margin-top: 0;
+        color: #000000;
     }
     #hero-msg h4 {
         display: none;
+    }
+
+    #hero-msg h1 {
+        color: #000000;
     }
     .home-title {
         font-size: 25px;
