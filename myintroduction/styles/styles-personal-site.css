@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu+Condensed&display=swap');
+
+#content-home{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #12172B;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+nav {
+    justify-content: space-around;
+    text-align: center;
+    grid-column: 3/8;
+    margin: auto auto;
+}
+
+nav a {
+
+    color:#EFE9F4;
+    text-decoration: none;
+    font-family:'Ubuntu Condensed','Verdana', 'sans-serif';
+    font-size: 1.7em;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+background-color: #65E7DE ;
+color:#12172B;
+text-decoration: underline;
+}
+
+.social {
+    grid-column: 8/11;
+    margin-top: 3em;
+}
+
+.social a {
+    padding: 20px 20px;
+}
+
+.social img {
+    border-radius: 10%;
+    border: solid #EFE9F4;
+}
+
+#logo-link {
+    grid-column: 1/2;
+}
+
+.logo{
+    width: 150px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+#home {
+    grid-column: 2/3; 
+    margin-top: 50px;
+}
+
+#about-me {
+    grid-column: 4/5;
+    margin-top: 50px;
+}
+
+#portfolio {
+    grid-column: 6/7;
+    margin-top: 50px;
+}
+
+/*This section is for the main section of the page */
+
+.first-entry {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 50px;
+    background-color: #65E7DE;
+}
+
+#ipad {
+    max-width: 800px;
+    width: 80%;
+    grid-column: 6/11;
+    grid-row: 2/4;
+    margin: 10px auto;
+    border-radius: 5%;
+    border: solid #12172B;
+}
+
+.first-entry h2 {
+    
+    grid-column: 4/8 ;
+    grid-row: 1/2;
+    text-align: center;
+    margin: auto auto;
+    color:#12172B;
+    text-decoration: none;
+    font-family:'Bebas Neue','Times New Roman', 'serif';
+    font-size: 1.7em;
+    padding: 10px;
+}
+
+.first-entry p {
+    grid-column: 1/6 ;
+    grid-row: 2/4;
+    text-align: center;
+    color:#12172B;
+    text-decoration: none;
+    font-family:'Ubuntu Condensed','Verdana', 'sans-serif';
+    font-size: 1.7em;
+    padding: 10px;
+    margin:50px auto;
+}
+
+.second-entry {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    background-color: #65E7DE;
+}
+
+#iphone {
+    max-width: 800px;
+    width: 80%;
+    grid-column: 1/6;
+    grid-row: 2/4;
+    margin: 10px auto;
+    border-radius: 5%;
+    border: solid #12172B;
+}
+
+.second-entry h2 {
+    
+    grid-column: 6/11 ;
+    grid-row: 1/2;
+    text-align: center;
+    margin: auto auto;
+    color:#12172B;
+    text-decoration: none;
+    font-family:'Bebas Neue','Times New Roman', 'serif';
+    font-size: 1.7em;
+    padding: 10px;
+}
+
+.second-entry p {
+    grid-column: 6/11 ;
+    grid-row: 2/4;
+    text-align: center;
+    color:#12172B;
+    text-decoration: none;
+    font-family:'Ubuntu Condensed','Verdana', 'sans-serif';
+    font-size: 1.7em;
+    padding: 10px;
+    margin:50px auto;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 70px 70px 70px ;
+    background-color: #12172B;
+}
+
+footer a:hover {
+    background-color: #65E7DE ;
+    color:#12172B;
+    text-decoration: underline;
+}
+
+#copyright {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    margin: auto auto;
+
+}
+
+#contact {
+    grid-column: 5/8;
+    grid-row: 1/4;
+    margin: auto auto;
+}
+
+#site-plan-link {
+    grid-column: 9/11;
+    grid-row: 1/4;
+    margin: auto auto;
+}
+
+
+
+footer a {
+    text-align: center;
+    color:#EFE9F4;
+    text-decoration: none;
+    font-family:'Ubuntu Condensed','Verdana', 'sans-serif';
+    font-size: 1.3em;
+    padding: 5px;
+}
+
+footer p {
+    text-align: center;
+    color:#EFE9F4;
+    text-decoration: none;
+    font-family:'Ubuntu Condensed','Verdana', 'sans-serif';
+    font-size: 1.3em;
+    padding: 5px;
+}
+
+
+/*This section is for smartphones */
+
+@media screen and (max-width: 900px) {
+
+    .first-entry, .second-entry{
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+
+    img .logo {
+        margin: auto auto;
+    }
+
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #ipad {
+        margin-top: 0;
+    }
+
+    h2 {
+        padding-top: 20px;
+    }
+
+    .home-page {
+        font-size: 15px;
+        background-color: #65E7DE;
+    }
+}
