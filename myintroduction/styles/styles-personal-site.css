@@ -71,7 +71,7 @@ text-decoration: underline;
 
 }
 
-/*This section is for the main section of the page */
+/*This section is for the main section of the home page */
 
 .first-entry {
     display: grid;
@@ -209,12 +209,136 @@ footer p {
     padding: 5px;
 }
 
+/*This section is for the portfolio page */
+
+.parallax {
+    display: grid;
+    /* The image used */
+    background-image: url("greenpattern.jpg");
+  
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.first-page {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 50px;
+}
+
+.first-page a {
+    grid-column: 6/11;
+    grid-row: 2/4;
+    margin: auto auto;
+
+}
+#wwr {
+    max-width: 800px;
+    width: 100%;
+    grid-column: 6/11;
+    grid-row: 2/4;
+    margin: auto auto;
+    text-align: center;
+    border-radius: 5%;
+    border: solid #f9f9f9;
+}
+
+.first-page p {
+    grid-column: 1/6 ;
+    grid-row: 2/4;
+    text-align: center;
+    padding-top: 2em;
+    color:#EFE9F4;
+    background-color: #644241;
+    border-radius: 5%;
+    border: dotted #f9f9f9;
+    text-decoration: none;
+    font-family:'Ubuntu Condensed','Verdana', 'sans-serif';
+    font-size: 1.7em;
+    margin:50px auto;
+}
+
+.languages {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 50px;
+}
+
+#programming {
+    max-width: 800px;
+    width: 80%;
+    grid-column: 6/11;
+    grid-row: 2/4;
+    margin: auto auto;
+    text-align: center;
+    border-radius: 5%;
+    border: solid #f9f9f9;
+}
+
+.languages p {
+    grid-column: 1/6 ;
+    grid-row: 2/4;
+    text-align: center;
+    padding-top: 2em;
+    color:#EFE9F4;
+    background-color: #644241;
+    border-radius: 5%;
+    border: dotted #f9f9f9;
+    text-decoration: none;
+    font-family:'Ubuntu Condensed','Verdana', 'sans-serif';
+    font-size: 1.7em;
+    margin:50px auto;
+}
+
+.customer {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 50px;
+}
+
+#girl-phone {
+    max-width: 800px;
+    width: 80%;
+    grid-column: 6/11;
+    grid-row: 2/4;
+    margin: auto auto;
+    text-align: center;
+    border-radius: 5%;
+    border: solid #f9f9f9;
+}
+
+.customer p {
+    grid-column: 1/6 ;
+    grid-row: 2/4;
+    text-align: center;
+    padding-top: 2em;
+    color:#EFE9F4;
+    background-color: #644241;
+    border-radius: 5%;
+    border: dotted #f9f9f9;
+    text-decoration: none;
+    font-family:'Ubuntu Condensed','Verdana', 'sans-serif';
+    font-size: 1.7em;
+    margin:50px auto;
+}
+
+.customer img {
+    max-width: 500px;
+}
+
+
 
 /*This section is for smartphones */
 
 @media screen and (max-width: 900px) {
 
-    .first-entry, .second-entry{
+    .first-entry, .second-entry, .first-page{
         display: block;
         height: auto;
         text-align: center;
@@ -289,4 +413,9 @@ footer p {
         font-size: 15px;
         background-color: #65E7DE;
     }
+
+    .parallax {
+        background-attachment: scroll;
+        width: 100%;
+      }
 }
