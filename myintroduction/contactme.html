@@ -32,39 +32,39 @@
             </div>
         </header>
         <main class="contactus">
-            <div id="feedback">
+            <div class="feedback">
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name"/>
+                        </li>
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" name="user_email"/>
+                        </li>
 
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                    </ul>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                </form>
             </div>
-            <form action="/my-handling-form-page" method="post">
-                <ul>
-                    <li>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name"/>
-                    </li>
-                    <li>
-                        <label for="mail">E-mail:</label>
-                        <input type="email" id="mail" name="user_email"/>
-                    </li>
-
-                    <li>
-                        <label for="msg">Message:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                </ul>
-                <li class="button">
-                    <button type="submit">Send your message</button>
-                </li>
-            </form>
         </main>
-    </div>
         <footer>
             <div id="site-plan-link">
                 <a href="site-plan.html">Site Plan</a>
             </div>
-            <p>My Introduction &copy; 2022 - Abraham Galicia</p>
-            <p>Some contact info:</p>
-            <a  href=contactme.html class="email">abraham.galicia@hotmail.com</a>
-            <p id="phone-number">Phone number +525626549124</p>
+            <p id="copyright">My Introduction &copy; 2022 - Abraham Galicia</p>
+            <div id="contact">
+                <p>Some contact info:</p>
+                <a  href=contactme.html id="email">abraham.galicia@hotmail.com</a>
+                <p id="phone-number">Phone number +525626549124</p>
+            </div>
         </footer>
         <script>
             // get the feedback div element so we can do something with it.
